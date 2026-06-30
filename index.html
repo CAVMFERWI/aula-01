@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo da Natureza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <header class="banner">
+        <div class="logo">
+            <h1>🌿 EcoMundo</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="#inicio">Início</a>
+            <a href="#conteudo">Conteúdo</a>
+            <a href="#curiosidades">Curiosidades</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+  
+    <div class="container-principal">
+        
+        <!-- 2. Layout com Grid (Main) -->
+        <main id="conteudo" class="grid-conteudo">
+            <article class="card">
+                <img src="https://picsum.photos/id/1018/300/200" alt="Prevenção de incêndios">
+                <h2>Preservação das Florestas</h2>
+                <p>Cuidar das nossas florestas é essencial para manter o equilíbrio do clima e proteger a nossa fauna.</p>
+            </article>
+
+            <article class="card">
+                <img src="https://picsum.photos/id/1043/300/200" alt="Água limpa">
+                <h2>Importância da Água</h2>
+                <p>A água potável é um recurso finito. Pequenas ações no dia a dia ajudam a evitar o desperdício.</p>
+            </article>
+
+            <article class="card">
+                <img src="https://picsum.photos/id/1024/300/200" alt="Energia limpa">
+                <h2>Energias Renováveis</h2>
+                <p>O futuro do planeta depende de fontes limpas, como a energia solar e a energia eólica.</p>
+            </article>
+
+            <article class="card">
+                <img src="https://picsum.photos/id/1044/300/200" alt="Reciclagem">
+                <h2>Consumo Consciente</h2>
+                <p>Reduzir, reutilizar e reciclar. Três passos simples que mudam o impacto do lixo no mundo.</p>
+            </article>
+        </main>
+
+      
+        <aside id="curiosidades" class="aside-flex">
+            <h2>💡 Curiosidades</h2>
+            <div class="dica-item">
+                <h3>Amazônia</h3>
+                <p>A Floresta Amazônica abriga cerca de 10% de todas as espécies de animais conhecidas no planeta.</p>
+            </div>
+            <div class="dica-item">
+                <h3>Árvores</h3>
+                <p>Uma única árvore adulta pode absorver até 22 kg de gás carbônico por ano.</p>
+            </div>
+            <div class="dica-item">
+                <h3>Oceanos</h3>
+                <p>Mais de 70% do oxigênio que respiramos é produzido pelas algas marinhas.</p>
+            </div>
+        </aside>
+
+    </div>
+
+   
+    <section id="contato" class="secao-contato">
+        <h2>Fale Conosco</h2>
+        <form class="form-natureza" action="#">
+            
+            <div class="campo">
+                <label for="nome">Nome Completo *</label>
+                <input type="text" id="nome" placeholder="Digite seu nome completo aqui" required>
+            </div>
+
+            <div class="campo-duplo">
+                <div class="campo">
+                    <label for="cpf">CPF</label>
+                    <!-- Máscara nativa via pattern (000.000.000-00) -->
+                    <input type="text" id="cpf" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato: 000.000.000-00" maxlength="14">
+                </div>
+                <div class="campo">
+                    <label for="nascimento">Data de Nascimento</label>
+                    <input type="date" id="nascimento">
+                </div>
+            </div>
+
+            <div class="campo-duplo">
+                <div class="campo">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" placeholder="exemplo@email.com" required>
+                </div>
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <!-- Máscara nativa via pattern ((00) 00000-0000) -->
+                    <input type="tel" id="telefone" placeholder="(00) 00000-0000" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" title="Digite no formato (00) 00000-0000">
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="assunto">Assunto</label>
+                <select id="assunto">
+                    <option value="sugestao">Sugestão</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="parceria">Trabalho Escolar / Parceria</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem *</label>
+                <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+
+            <div class="campo-checkbox">
+                <input type="checkbox" id="termos" required>
+                <label for="termos">Eu aceito os termos de uso e privacidade *</label>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+        </form>
+    </section>
+
+  
+    <footer class="rodape">
+        <div class="coluna-footer">
+            <h3>Sobre Nós</h3>
+            <p>Somos estudantes do 2º ano criando um projeto simples para conscientizar as pessoas sobre a importância de proteger a natureza e os biomas.</p>
+        </div>
+        <div class="coluna-footer">
+            <h3>Contato</h3>
+            <p>E-mail: contato@ecomundo.com</p>
+            <p>Telefone: (51) 99999-9999</p>
+            <p>Cidade: Taquara - RS</p>
+        </div>
+        <div class="coluna-footer">
+            <h3>Redes Sociais</h3>
+            <div class="redes-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
